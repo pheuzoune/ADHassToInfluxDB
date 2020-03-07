@@ -1,6 +1,8 @@
 # ADHassToInfluxDB
 
-## Why ? 
+Appdaemon module to push data from Home Assistant to InlfuxDB on a configurable frequency. 
+
+## Why
 
 If like me, you use influxdb to keep history of your sensors from Home Assistant, you may face an issue:
 Home Assistant only data from a sensor when it's modified. 
@@ -57,12 +59,12 @@ You can add filters to include only entities based on regular expression :
 ```
 
 You can add filters to exclude entities based on regular expression : 
-
+```
     exclude:
       - "updater.+"
       - "zigate.+"
       - "timer.+"
       - "zwave.+"
       - "camera.*"
-
+```
 
