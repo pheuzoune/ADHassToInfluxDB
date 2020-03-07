@@ -46,7 +46,9 @@ You need:
 
 ### Filters
 
-You can add filters to include only entities based on regular expression : 
+
+
+You can add filters to include only entities based on regular expression. 
 
 ```
   filters:
@@ -58,7 +60,8 @@ You can add filters to include only entities based on regular expression :
       - "cover.*"
 ```
 
-You can add filters to exclude entities based on regular expression : 
+You can add filters to exclude entities based on regular expression
+If you have an include filter, exclude is ignored. 
 ```
     exclude:
       - "updater.+"
